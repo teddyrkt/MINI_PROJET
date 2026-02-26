@@ -1,16 +1,50 @@
-# React + Vite
+Générateur dynamique de besoins en protéines
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Teddy Rakotoarivelo
+INGE1-APP-BDML 2
 
-Currently, two official plugins are available:
+Description :
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Cette application web développée permet de générer dynamiquement un tableau des besoins journaliers en protéines en fonction :
+- d’un poids minimum
+- d’un poids maximum
+- d’un nombre de lignes à afficher
+- d’un ou plusieurs objectifs sportifs
 
-## React Compiler
+Les calculs sont réalisés automatiquement à partir des recommandations en grammes de protéines par kilogramme de poids corporel.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+--------------------------
 
-## Expanding the ESLint configuration
+Fonctionnalités :
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Sélection de plusieurs objectifs sportifs
+- Génération dynamique des poids
+- Calcul automatique des besoins en protéines (plage min - max)
+- Validation des données utilisateur
+- Export du tableau en **CSV** et **PDF**
+- Interface responsive
+
+--------------------------
+
+Objectifs pédagogiques :
+
+Ce projet permet de pratiquer :
+
+- Les composants React
+- La gestion du state (`useState`)
+- Le rendu conditionnel
+- La génération dynamique de données
+- La séparation de la logique (composants / utils)
+
+--------------------------
+
+Installation : 
+
+1. Cloner le repository :
+git clone <url-du-repo>
+
+2. Installer les dépendances :
+npm install
+
+3.Lancer le projet :
+npm run dev
