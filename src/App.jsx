@@ -101,12 +101,13 @@ function App() {
         )}
         {/* Menu d’export CSV / PDF */}
         <div className="export-wrapper">
-          <button
-            className="export-btn"
-            onClick={() => setShowExportMenu(!showExportMenu)}
-          >
-            Exporter ▼
-          </button>
+        <button
+          className="export-btn"
+          disabled={errorMessage}
+          onClick={() => setShowExportMenu(!showExportMenu)}
+        >
+          Exporter ▼
+        </button>
 
           {showExportMenu && (
             <div className="export-menu">
